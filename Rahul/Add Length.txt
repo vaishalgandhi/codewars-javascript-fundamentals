@@ -1,0 +1,23 @@
+function addLength(str) {
+var arr =new Array();
+var str1="",i,j=0,k=0,count=0;
+for (i=0;i<str.length;i++)
+{
+if(str.charAt(i)!=' ' )
+{
+
+count++;
+}
+else if(str.charAt(i)==' '){
+str1=str.substring(j,count+j)+" "+count;
+j=i+1;
+arr[k]=str1;
+k++;
+count=0;
+
+}
+str1=str.substring(j,count+j)+" "+count;
+arr[k]=str1;
+}
+return arr;
+}

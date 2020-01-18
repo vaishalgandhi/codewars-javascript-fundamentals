@@ -1,0 +1,24 @@
+function findScreenHeight(width, ratio) {
+    // Happy coding :)
+    var height;
+    var dim='';
+    
+    var n=ratio.length; 
+    
+    
+    for(var i=0; i<n;i++)
+    {
+    if(ratio.charAt(i)==':')
+    {
+     var rat1 = ratio.substr(0,i);
+     var rat2 = ratio.substr(i+1,n); 
+    }
+    
+    
+    }
+    var rat = rat1/rat2;
+    height = width/rat;
+    dim = width.toString()+"x"+ height.toString();
+    //dim = height.toString();
+    return dim;
+}
